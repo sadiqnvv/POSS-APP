@@ -36,6 +36,12 @@ const Edit = () => {
         getCategories();
     }, []);
 
+    useEffect(() => {
+        if (editingItem && isEditModalOpen) {
+            form.setFieldsValue(editingItem);
+        }
+    }, [editingItem, isEditModalOpen, form]);
+
     const onFinish = async (values) => {
         try {
             const data = await fetchWithToken(process.env.REACT_APP_SERVER_URL + `/api/products/${editingItem._id}`, {
@@ -53,6 +59,7 @@ const Edit = () => {
                 })
             );
             setIsEditModalOpen(false)
+            form.resetFields();
         } catch (error) {
             message.error("Something went wrong.");
         }
@@ -147,14 +154,17 @@ const Edit = () => {
                 rowKey={"_id"}
                 scroll={{
                     x: 1000,
-                    y: 600,
+                    y: 400,
                 }}
             />
 
             <Modal
-                title="Add New Product"
+                title="Edit Product"
                 open={isEditModalOpen}
-                onCancel={() => setIsEditModalOpen(false)}
+                onCancel={() => {
+                    setIsEditModalOpen(false)
+                    form.resetFields()
+                }}
                 footer={false}
             >
                 <Form
@@ -188,7 +198,7 @@ const Edit = () => {
                             { required: true, message: "Product Price Field Cannot Be Empty!" },
                         ]}
                     >
-                        <Input placeholder="Ürün fiyatı giriniz." />
+                        <Input placeholder="Product Price." />
                     </Form.Item>
                     <Form.Item
                         name="category"
