@@ -23,6 +23,7 @@ const Login = () => {
 
             const user = await res.json();
 
+
             if (user.status === 200) {
                 localStorage.setItem(
                     "posUser",
@@ -34,9 +35,11 @@ const Login = () => {
                 );
                 message.success(user.message);
                 navigate("/");
-            } else if (user.status === 404) {
+            }
+            if (user.status === 404) {
                 message.error(user.message);
-            } else if (user.status === 403) {
+            }
+            if (user.status === 403) {
                 message.error(user.message);
             }
             setLoading(false);
