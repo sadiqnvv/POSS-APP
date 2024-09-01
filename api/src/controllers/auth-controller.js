@@ -27,9 +27,22 @@ const login = async (req, res) => {
             accessToken: result.accessToken,
             refreshToken: result.refreshToken
         });
-    } else {
-        res.status(result.status).json({ message: result.message });
     }
+    if (result.status === 403) {
+        res.status(403).json({
+            status: result.status,
+            message: result.message,
+        });
+    }
+    if (result.status === 404) {
+        res.status(404).json({
+            status: result.status,
+            message: result.message,
+        });
+    }
+    // } else {
+    //     res.status(result.status).json({ message: result.message });
+    // }
 };
 
 const refreshToken = async (req, res) => {
