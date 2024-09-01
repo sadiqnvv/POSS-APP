@@ -14,7 +14,7 @@ const CardTotals = () => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
     return (
-        <div className="cart h-full max-h-[calc(100vh_-_90px)] flex flex-col">
+        <div className="cart h-full max-h-[calc(100vh_-_90px)] pb-10 md:pb-0 flex flex-col">
             <h2 className="bg-blue-600 text-center py-4 text-white font-bold tracking-wide">
                 Cart items
             </h2>

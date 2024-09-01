@@ -34,8 +34,10 @@ const Login = () => {
                 );
                 message.success(user.message);
                 navigate("/");
-            } else if (user.status === 404 || user.status === 403) {
-                message.error(user.error);
+            } else if (user.status === 404) {
+                message.error(user.message);
+            } else if (user.status === 403) {
+                message.error(user.message);
             }
             setLoading(false);
         } catch (error) {
