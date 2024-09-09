@@ -66,13 +66,25 @@ After completing the above steps, you can access the project in your browser at 
 
 The backend server will be running at http://localhost:5000, and all requests from the frontend will be proxied to this server.
 
+
+*Screenshots*
+
+![image](https://github.com/user-attachments/assets/2f2726c1-2414-4412-a3e2-06510eae366f)
+![image](https://github.com/user-attachments/assets/bc58680d-7e56-438d-b279-1011d5142816)
+![image](https://github.com/user-attachments/assets/7e779da2-2f28-4003-8c48-f81a09797715)
+![image](https://github.com/user-attachments/assets/87d25060-8f34-401a-a668-83fcdc2a866c)
+![image](https://github.com/user-attachments/assets/26ec1e09-f816-4de8-85d1-55371b184c42)
+![image](https://github.com/user-attachments/assets/4116a5fb-079b-4441-b0ba-c7b01ac1bc3d)
+![image](https://github.com/user-attachments/assets/f98c001c-d7f5-44de-b4fb-18c445ba7d91)
+
 *Online Version*
 
 You can also check out the live version of the site at: https://my-poss-application-client.onrender.com/
 
+License
 
-
-
+This project is licensed under the Apache 2.0 License.
+-------------------------------------------------------------------------------------------------------------------------------------------------
 *Приложение POS*
 
 Этот проект представляет собой полнофункциональное приложение для точки продаж (POS) с расширенной админ-панелью и функциональностью для клиентов. В приложение включены такие функции, как управление товарами, корзина покупок, обработка заказов, управление клиентами и отслеживание доходов. Сайт полностью защищен с помощью аутентификации на основе JWT, и все чувствительные данные хранятся надежно с использованием bcrypt.
@@ -139,6 +151,20 @@ You can also check out the live version of the site at: https://my-poss-applicat
 
 Сервер бэкенда будет работать по адресу http://localhost:5000, и все запросы с фронтенда будут направляться на этот сервер.
 
+*Скриншоты*
+
 *Онлайн версия*
 
+![image](https://github.com/user-attachments/assets/2f2726c1-2414-4412-a3e2-06510eae366f)
+![image](https://github.com/user-attachments/assets/bc58680d-7e56-438d-b279-1011d5142816)
+![image](https://github.com/user-attachments/assets/7e779da2-2f28-4003-8c48-f81a09797715)
+![image](https://github.com/user-attachments/assets/87d25060-8f34-401a-a668-83fcdc2a866c)
+![image](https://github.com/user-attachments/assets/26ec1e09-f816-4de8-85d1-55371b184c42)
+![image](https://github.com/user-attachments/assets/4116a5fb-079b-4441-b0ba-c7b01ac1bc3d)
+![image](https://github.com/user-attachments/assets/f98c001c-d7f5-44de-b4fb-18c445ba7d91)
+
 Вы также можете ознакомиться с развернутой версией сайта по ссылке: https://my-poss-application-client.onrender.com/
+
+Лицензия
+
+Этот проект лицензирован на условиях лицензии Apache 2.0.
